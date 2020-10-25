@@ -1,14 +1,9 @@
-  <script data-require="jquery@2.1.1" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script>
-  jQuery(function($) {
-  console.log("start")
-  $.get("https://raw.githubusercontent.com/opendns/public-domain-lists/master/opendns-random-domains.txt", function(wholeTextFile) {
-    //  console.log(wholeTextFile)
-    var lines = wholeTextFile.split(/\n/),
-      randomIndex = Math.floor(Math.random() * lines.length),
-      randomLine = lines[randomIndex];
-    console.log(randomIndex, randomLine)
-    $("#ajax").html(randomLine.replace(/#/g,"<br>"))
-  })
-})
-  </script>
+<center>
+<h1>
+<br>
+<a href="https://joyel24.github.io/Randomredirect.html" target="_blank" rel="noopener noreferrer">Pick a Random Website</a>
+<h3>
+	Based on <a href=https://raw.githubusercontent.com/opendns/public-domain-lists/master/opendns-random-domains.txt>This domain list</a>
+</h3>
+</h1>
+</center>

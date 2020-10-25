@@ -1,9 +1,8 @@
 <script data-require="jquery@2.1.1" data-semver="2.1.1" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
   jQuery(function($) {
-
+	  
 	$.get("https://raw.githubusercontent.com/opendns/public-domain-lists/master/opendns-random-domains.txt", function(wholeTextFile) {
-	    //  console.log(wholeTextFile)
 	    var lines = wholeTextFile.split(/\n/),
 	      randomIndex = Math.floor(Math.random() * lines.length),
 	      randomLine = lines[randomIndex],
@@ -11,10 +10,8 @@
 
 	    console.log(randomSite)
 	    $("#ajax").html(randomLine.replace(/#/g,"<br>"));
-	        
-	    //function NewTab() { window.open("http://"+randomLine,"_blank"); }
 
-	    window.open(randomSite);
+	    document.location.href=randomSite;
 	})
 })
 </script>

@@ -41,11 +41,11 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "/ESP32-Webflasher/firmware/esp32-deauther/esp32-s3/bootloader.bin",
+          "path": "/esp/firmware/esp32-deauther/esp32-s3/bootloader.bin",
           "offset": 0
         },
         {
-          "path": "/ESP32-Webflasher/firmware/esp32-deauther/esp32-s3/firmware.bin",
+          "path": "/esp/firmware/esp32-deauther/esp32-s3/firmware.bin",
           "offset": 65536
         }
       ]
